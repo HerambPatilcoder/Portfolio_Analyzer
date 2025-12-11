@@ -1,6 +1,5 @@
 import os
 from typing import Dict, Any
-import streamlit as st
 
 from groq import Groq
 
@@ -10,7 +9,7 @@ def _get_client():
     Returns a Groq client.
     Requires GROQ_API_KEY to be set in environment or Streamlit secrets.
     """
-    api_key = st.secrets["GROQ_API_KEY"]
+    api_key = os.get_env("GROQ_API_KEY")
 
     # Optional: allow Streamlit secrets
     try:
