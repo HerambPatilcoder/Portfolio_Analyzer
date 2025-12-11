@@ -6,7 +6,7 @@ scikit-learn
 scipy
 matplotlib
 plotly
-PyPortfolioOpt
+PyPortfolioOpt==1.5.5
 python-dotenv
 openai
 requests
